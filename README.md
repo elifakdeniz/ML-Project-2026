@@ -76,6 +76,7 @@ Supplementary analysis (Appendix B) validates this choice by showing aggressive 
   - Embedding layer: 128 dimensions
   - LSTM layer: 64 hidden units
   - Dense output: 3 units (softmax)
+  - 
   - Dropout: 0.3
 - **Class-weighted loss:** Neutral class receives 3.33× higher penalty
 - **Training:** Early stopping (patience 5), learning rate scheduling, gradient clipping
@@ -184,10 +185,6 @@ print(f"Macro F1: {f1_score(y_test, y_pred, average='macro'):.3f}")
 ```
 
 ---
-
-## 📖 Paper
-
-The complete research paper is available in `paper/final_paper.pdf`.
 
 ## Future Work
 
